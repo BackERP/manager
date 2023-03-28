@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="805d2b9c-6d07-4c9b-b54f-87f6f0a633c5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.github/workflows/deployProduct.yml" afterPath="$PROJECT_DIR$/.github/workflows/deployProduct.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="manager_purple.iws" />
@@ -203,7 +202,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679954286764</updated>
-      <workItem from="1679954289185" duration="5501000" />
+      <workItem from="1679954289185" duration="5820000" />
     </task>
     <task id="LOCAL-00001" summary="Сборка проекта React через Action">
       <created>1679983915801</created>
@@ -282,11 +281,18 @@
       <option name="project" value="LOCAL" />
       <updated>1680030186563</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Отладка переменных среды">
+      <created>1680030768539</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1680030768539</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5501000" />
+    <option name="totallyTimeSpent" value="5820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
