@@ -29,3 +29,11 @@ jobs:
            remote_host: ${{secrets.SERVER_IP}}
            remote_user: ${{secrets.USER_NAME}} 
            remote_key:  ${{secrets.SSH_KEY}}
+       - name: deploy
+         uses: appleboy/ssh-action@master
+         with:
+           host: ${{ secrets.SERVER_IP }}
+           username: ${{ secrets.USER_NAME }}
+           password: ${{ secrets.USER_PASSWORD }}
+           port: ${{ secrets.PORT }}
+           script: bash deployManager.sh
