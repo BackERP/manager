@@ -19,7 +19,7 @@ jobs:
          with:
             node-version: 16
        - run: npm install
-       - run: API_HOST=${{secrets.REACT_APP_API_HOST}} npm run build
+       - run: REACT_APP_API_HOST=${{secrets.REACT_APP_API_HOST}} npm run build
        - name: rsync deployments
          uses: burnett01/rsync-deployments@5.2.1
          with:
