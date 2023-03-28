@@ -20,8 +20,12 @@ jobs:
             node-version: 16
        - run: npm install
        - run: npm run build
-       - run: mkdir ~/.ssh
-       - run: 'echo "$SSH_KEY" >> ~/.ssh/github-action'
-       - run: chmod 400 ~/.ssh/github-action
-       - run: echo -e "Host \n\tUser $USER_NAME\n\tHostname $SERVER_IP\n\tIdentityFile ~/.ssh/github-action\n\tStrictHostKeyChecking No" >> ~/.ssh/config
-       - run: rsync -r ssh build ${{secrets.USER_NAME}}@${{secrets.SERVER_IP}}:~/manager
+       - name: rsync deployments
+         uses: burnett01/rsync-deployments@5.2.1
+         with:
+           switches: -avzr --delete
+           path: build/
+           remote_path: ~/manager/
+           remote_host: ${{secrets.SERVER_IP}}
+           remote_user: ${{secrets.USER_NAME}} 
+           remote_key:  ${{secrets.SSH_KEY}}
