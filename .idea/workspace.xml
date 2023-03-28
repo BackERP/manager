@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="805d2b9c-6d07-4c9b-b54f-87f6f0a633c5" name="Default" comment="">
+    <list default="true" id="805d2b9c-6d07-4c9b-b54f-87f6f0a633c5" name="Default" comment="Сборка проекта React через Action">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.github/workflows/deployProduct.yml" afterPath="$PROJECT_DIR$/.github/workflows/deployProduct.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/home.component.js" afterPath="$PROJECT_DIR$/src/components/home.component.js" />
     </list>
     <ignored path="manager_purple.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -148,7 +149,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679954286764</updated>
-      <workItem from="1679954289185" duration="3338000" />
+      <workItem from="1679954289185" duration="3637000" />
     </task>
     <task id="LOCAL-00001" summary="Сборка проекта React через Action">
       <created>1679983915801</created>
@@ -199,11 +200,18 @@
       <option name="project" value="LOCAL" />
       <updated>1679986429231</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Сборка проекта React через Action">
+      <created>1679992194198</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679992194198</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3338000" />
+    <option name="totallyTimeSpent" value="3637000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />

@@ -33,7 +33,9 @@ export default class Home extends Component {
   render() {
     return (
       <div className="container">
-          <h3>Admin panel of Token Dobra</h3>
+          <center>
+            <h1>Project Dashboard</h1>
+          </center>
       </div>
     );
   }
