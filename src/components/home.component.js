@@ -35,6 +35,9 @@ export default class Home extends Component {
       <div className="container">
           <center>
             <h1>Project Dashboard</h1>
+            <div>mode: {process.env.NODE_ENV}</div>
+             <div>API_HOST: {process.env.API_HOST}</div>
+             <div>PORT: {process.env.PORT}</div>
           </center>
       </div>
     );
