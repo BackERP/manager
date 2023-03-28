@@ -1,4 +1,4 @@
-import { message, Upload } from 'antd';
+import { message } from 'antd';
 import StorageService from "../services/storage.service";
 import EventBus from "./EventBus";
 
@@ -26,7 +26,7 @@ const uploaderHelper = {
      return isJpgOrPng;
    },
    async uploadImage(options){
-      const { onSuccess, onError, file, onProgress } = options;
+      const { onSuccess, onError, file } = options;
 
       const fmData = new FormData();
       fmData.append("image", file);
@@ -38,12 +38,11 @@ const uploaderHelper = {
 
     } catch (err) {
        console.log("Eroor: ", err);
-       const error = new Error("Some error");
        onError({ err });
     }
   },
    async uploadIPFS(options){
-      const { onSuccess, onError, file, onProgress } = options;
+      const { onSuccess, onError, file } = options;
 
       const fmData = new FormData();
       fmData.append("image", file);
@@ -55,7 +54,6 @@ const uploaderHelper = {
 
     } catch (err) {
        console.log("Eroor: ", err);
-       const error = new Error("Some error");
        onError({ err });
     }
   },

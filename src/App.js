@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { message, notification } from 'antd';
+import { notification } from 'antd';
 
 
 import AuthService from "./services/auth.service";
