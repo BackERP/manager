@@ -18,7 +18,7 @@ export default class AssetForm extends Component {
     this.state = {
        subjects: [],
        subjectspecification: [],
-       uuid:'',
+       uuid: undefined,
        subject: undefined,
        subject_specification: undefined,
        name:'',
@@ -63,7 +63,7 @@ export default class AssetForm extends Component {
   {
      if(!options.length)
        return;
-     if(uuid == '' && !isDefault)
+     if(uuid === undefined && !isDefault)
        return;
 
      const result = options.filter(obj => obj.value == value);
@@ -72,8 +72,10 @@ export default class AssetForm extends Component {
 
   UNSAFE_componentWillReceiveProps(nextProps) {
     if(nextProps.data == null)
+    {
+      this.setState({uuid: undefined});
       return;
-
+    }
 
     this.setState({
        uuid: nextProps.data.uuid,

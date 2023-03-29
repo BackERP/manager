@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="805d2b9c-6d07-4c9b-b54f-87f6f0a633c5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/components/assets/asset-offer.form.js" afterPath="$PROJECT_DIR$/src/components/components/assets/asset-offer.form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/components/assets/asset.form.js" afterPath="$PROJECT_DIR$/src/components/components/assets/asset.form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/components/assets/assets.component.js" afterPath="$PROJECT_DIR$/src/components/components/assets/assets.component.js" />
     </list>
     <ignored path="manager_purple.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -202,7 +205,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679954286764</updated>
-      <workItem from="1679954289185" duration="5820000" />
+      <workItem from="1679954289185" duration="6183000" />
     </task>
     <task id="LOCAL-00001" summary="Сборка проекта React через Action">
       <created>1679983915801</created>
@@ -288,11 +291,18 @@
       <option name="project" value="LOCAL" />
       <updated>1680030768539</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Скачит состояние uuid на форме ввода asset">
+      <created>1680047713768</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1680047713768</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5820000" />
+    <option name="totallyTimeSpent" value="6183000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -325,7 +335,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Сборка проекта React через Action" />
     <MESSAGE value="Отладка переменных среды" />
-    <option name="LAST_COMMIT_MESSAGE" value="Отладка переменных среды" />
+    <MESSAGE value="Скачит состояние uuid на форме ввода asset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Скачит состояние uuid на форме ввода asset" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

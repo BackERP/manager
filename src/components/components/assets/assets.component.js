@@ -131,7 +131,7 @@ export default class Assets extends Component {
                mime: formState.mime,
 
               }
-    if(obj.uuid === '')
+    if(obj.uuid === undefined)
       return this.addNewItem(obj);
 
     return this.updateItem(obj);
@@ -144,7 +144,7 @@ export default class Assets extends Component {
      return this.deleteItem(uuid);                                             
   }
   onAddNew(){
-    this.setState({formShow: true, data:{uuid:''
+    this.setState({formShow: true, data:{uuid:undefined
                                         , subject_data: {uuid:null}
                                         , subject_specification_data: {uuid:null}
                                         , name:''

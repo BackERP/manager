@@ -15,9 +15,9 @@ export default class AssetOfferForm extends Component {
     this.state = {
        assetResource: undefined,
        provider_data: undefined,
-       price: 0.0,
-       quantity: 1000.0,
-       is_physic: false,
+       price: 1000.0,
+       quantity: 100.0,
+       is_physic: true,
        price_physic:30000.0,
 
        rights: {
