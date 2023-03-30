@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Select, Form, Table, Button, Space, Popconfirm, Image, message } from 'antd';
 import OfferService from '../../../services/offer.service';
 import OrderService from '../../../services/order.service';
+import PaymentService from '../../../services/payment.service';
 
 import AuthService from "../../../services/auth.service";
 
@@ -92,7 +93,8 @@ export default class Offers extends Component {
 
   async createOrder(obj)
   {
-     await OrderService.orderItem(obj);
+//     await OrderService.orderItem(obj);
+     await PaymentService.paid(obj);
      this.refreshData();
 
      message.success("Asset purchased");
