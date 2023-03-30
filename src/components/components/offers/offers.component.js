@@ -95,6 +95,7 @@ export default class Offers extends Component {
   {
 //     await OrderService.orderItem(obj);
      await PaymentService.paid(obj);
+
      this.refreshData();
 
      message.success("Asset purchased");
