@@ -42,7 +42,7 @@ export default class AssetOfferForm extends Component {
      this.setState({is_physic: event.target.checked});
   }
   onChangePricePhysic(event){
-     this.setState({price_physic: event.target.checked});
+     this.setState({price_physic: event.target.value});
   }
 
   UNSAFE_componentWillReceiveProps(nextProps) {
