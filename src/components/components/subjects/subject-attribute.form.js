@@ -6,6 +6,8 @@ import uploaderHelper from "../../../common/uploaderHelper";
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
 import { message, Upload } from 'antd';
 import EventBus from "../../../common/EventBus";
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 const { TextArea } = Input;
 const FormItem = Form.Item;
@@ -67,8 +69,8 @@ export default class SubjectAttributeForm extends Component {
    )};
 
 
-  onChangeTextValue(event){
-     this.setState({text_value: event.target.value});
+  onChangeTextValue(value){
+     this.setState({text_value: value});
   }
   onChangeStringValue(event){
      this.setState({string_value: event.target.value});
@@ -190,11 +192,11 @@ export default class SubjectAttributeForm extends Component {
                label="Text"
                required
              >
-              <TextArea rows="3" placeholder="Enter text" 
-                 onChange={this.onChangeTextValue}
-                 value={this.state.text_value}
-                 disabled={!this.state.rights.editItem}
-              />
+           <ReactQuill theme="snow" placeholder="Enter text" 
+                       onChange={this.onChangeTextValue}
+                       value={this.state.text_value}
+                       disabled={!this.state.rights.editItem}
+           />
              </FormItem>
         )}
        {
