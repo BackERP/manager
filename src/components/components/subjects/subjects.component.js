@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Select, Form, Table, Button, Space, Popconfirm } from 'antd';
+import { Select, Form, Table, Button, Space, Popconfirm, Checkbox } from 'antd';
 import SubjectService from '../../../services/subject.service';
 import AuthService from "../../../services/auth.service";
 
@@ -30,6 +30,10 @@ export default class Subjects extends Component {
                 { title: 'Subject type', key: 'subject_type',
                  render: (_, record) =>record.subject_type_data.name,
                },
+                { title: 'Show on main',  key: 'show_main',
+                   render: (_, record) =><Checkbox checked={record.show_main} disabled/>,
+                },
+                { title: 'Order', dataIndex: 'order', key: 'order' },
                 {title: 'Action',
                  key: 'operation',
                  render: (_, record) =>{
@@ -105,6 +109,8 @@ export default class Subjects extends Component {
     this.setState({formShow: false})
     let obj = {uuid: formState.uuid,
                name: formState.name,
+               show_main: formState.show_main,
+               order: formState.order,
                subject_type: formState.subject_type,
               }
     if(obj.uuid === '')
@@ -120,11 +126,8 @@ export default class Subjects extends Component {
      return this.deleteItem(uuid);                                             
   }
   onAddNew(){
-    this.setState({formShow: true, data:{uuid:'',  name:'', subject_type_data:{uuid:'', name:''}}})
+    this.setState({formShow: true, data:{uuid:'',  name:'', subject_type_data:{uuid:'', name:'', show_main:false, order: undefined}}})
   }
-
-
-
 
 
   componentDidMount() {

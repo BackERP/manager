@@ -17,6 +17,7 @@ export default class PersonForm extends Component {
       first_name: this.props.data !== null?this.props.data.first_name:'',
       middle_name: this.props.data !== null?this.props.data.middle_name:'',
       last_name: this.props.data !== null?this.props.data.last_name:'',
+      age: this.props.data !== null?this.props.data.age:'',
       rights: {
                  editItem: AuthService.checkAuth("MANAGER")
               }
@@ -25,6 +26,7 @@ export default class PersonForm extends Component {
     this.onChangeFirstName = this.onChangeFirstName.bind(this);
     this.onChangeMiddleName = this.onChangeMiddleName.bind(this);
     this.onChangeLastName = this.onChangeLastName.bind(this);
+    this.onChangeAge = this.onChangeAge.bind(this);
 
     this.onSave = this.onSave.bind(this);
  }
@@ -38,6 +40,9 @@ export default class PersonForm extends Component {
   onChangeLastName(event){
      this.setState({last_name: event.target.value});
   }
+  onChangeAge(event){
+     this.setState({age: event.target.value});
+  }
 
 
 
@@ -47,6 +52,7 @@ export default class PersonForm extends Component {
         first_name: nextProps.data !== null?nextProps.data.first_name:'',
         middle_name: nextProps.data !== null?nextProps.data.middle_name:'',
         last_name: nextProps.data !== null?nextProps.data.last_name:'',
+        age: nextProps.data !== null?nextProps.data.age:'',
      });
 
   }
@@ -99,6 +105,17 @@ export default class PersonForm extends Component {
                  disabled={!this.state.rights.editItem}
               />
           </FormItem>
+          <FormItem
+            label="Age"
+            required
+          >
+              <Input type="number" placeholder="Enter age" 
+                 onChange={this.onChangeAge}
+                 value={this.state.age}
+                 disabled={!this.state.rights.editItem}
+              />
+          </FormItem>
+
 
         </Form>
       </Modal>

@@ -29,6 +29,7 @@ export default class Persons extends Component {
       columns: [{ title: 'First name', dataIndex: 'first_name', key: 'first_name' },
                 { title: 'Middle name', dataIndex: 'middle_name', key: 'middle_name'},
                 { title: 'Last name', dataIndex: 'last_name', key: 'last_name'},
+                { title: 'Age', dataIndex: 'age', key: 'age'},
                 {title: 'Action',
                  key: 'operation',
                  render: (_, record) =>{
@@ -99,6 +100,7 @@ export default class Persons extends Component {
                first_name: formState.first_name,
                middle_name: formState.middle_name,
                last_name: formState.last_name,
+               age: formState.age,
               }
     if(obj.uuid === '')
       return this.addNewItem(obj);
@@ -116,7 +118,7 @@ export default class Persons extends Component {
   }
 
   onAddNew(){
-     this.setState({formShow: true, data:{uuid:'',  first_name:'', middle_name:'', last_name:''}})
+     this.setState({formShow: true, data:{uuid:'',  first_name:'', middle_name:'', last_name:'', age:undefined}})
   }
 
   async refreshData(){

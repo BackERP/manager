@@ -17,6 +17,8 @@ import BoardOrders from "./components/board-orders.component";
 import BoardAssets from "./components/board-assets.componet";
 import BoardSubjects from "./components/board-subjects.component";
 import BoardSettings from "./components/board-settings.component";
+import BoardLab from "./components/board-lab.component";
+
 
 
 // import AuthVerify from "./common/auth-verify";
@@ -130,6 +132,13 @@ class App extends Component {
               </Link>
             </li>
             )}
+            {isManager&&(
+            <li className="nav-item">
+              <Link to={"/lab"} className="nav-link">
+                Lab
+              </Link>
+            </li>
+            )}
 
 
           </div>
@@ -175,6 +184,8 @@ class App extends Component {
             <Route path="/assets" element={<BoardAssets />} />
             <Route path="/subjects" element={<BoardSubjects />} />
             <Route path="/settings" element={<BoardSettings />} />
+            <Route path="/lab" element={<BoardLab />} />
+
           </Routes>
         </div>
         {/* <AuthVerify logOut={this.logOut}/> */}
