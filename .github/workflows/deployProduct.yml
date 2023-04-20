@@ -25,7 +25,7 @@ jobs:
          with:
            switches: -avzr --delete
            path: build/
-           remote_path: ~/manager/
+           remote_path: /var/www/manager/
            remote_host: ${{secrets.SERVER_IP}}
            remote_user: ${{secrets.USER_NAME}} 
            remote_key:  ${{secrets.SSH_KEY}}
