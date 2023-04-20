@@ -9,6 +9,12 @@ class PersonService {
   async getList() {
     return ApiProvider.get(SERVICE_API + 'list', { params:{page:-1}}, { headers: authHeader() });
   }
+  async getRepresentations(subject) {
+    return ApiProvider.get(SERVICE_API + 'representations', { params:{subject:subject}}, { headers: authHeader() });
+  }
+
+
+
   async getItem(uuid) {
     return ApiProvider.get(SERVICE_API + 'get', { params:{uuid:uuid}}, { headers: authHeader() });
   }

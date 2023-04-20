@@ -18,6 +18,8 @@ import BoardAssets from "./components/board-assets.componet";
 import BoardSubjects from "./components/board-subjects.component";
 import BoardSettings from "./components/board-settings.component";
 import BoardLab from "./components/board-lab.component";
+import BoardMarket from "./components/board-market.component";
+
 
 
 
@@ -139,6 +141,14 @@ class App extends Component {
               </Link>
             </li>
             )}
+            {isManager&&(
+            <li className="nav-item">
+              <Link to={"/markets"} className="nav-link">
+                Markets
+              </Link>
+            </li>
+            )}
+
 
 
           </div>
@@ -185,6 +195,7 @@ class App extends Component {
             <Route path="/subjects" element={<BoardSubjects />} />
             <Route path="/settings" element={<BoardSettings />} />
             <Route path="/lab" element={<BoardLab />} />
+            <Route path="/markets" element={<BoardMarket />} />
 
           </Routes>
         </div>

@@ -5,6 +5,8 @@ import React, { Component } from "react";
 
 import { Tabs } from 'antd';
 import SubjectTypeAttributes from './components/settings/subject-type-attributes.component';
+import Representations from './components/representations/representations.component';
+
 
 
 
@@ -20,6 +22,11 @@ export default class BoardSettings extends Component {
                    label: `Attributes of type subject`,
                    key: 1,
                    children: <SubjectTypeAttributes/>,
+                 },
+                 {
+                   label: `Representations`,
+                   key: 2,
+                   children: <Representations/>,
                  }
                 ],
 
