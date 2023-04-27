@@ -52,7 +52,7 @@ export default class HeadMarket extends Component {
   onChangeMarket(item){       
 //        console.log(item);
         const market = this.state.markets_data.find((o)=>o.uuid == item.value);
-
+                                                    
         this.setState({
           market:  {value:item.value, label:item.lable},
           language: market.locale_data.language_data,
@@ -62,7 +62,7 @@ export default class HeadMarket extends Component {
           region_name: market.locale_data.region_data.name,
           currency_name: market.currency_data.name,
         });
-        this.props.onChangeMarket(item.value);
+        this.props.onChangeMarket(item.value, market.currency_data.uuid);
   };
 
   async refreshMarket(){
@@ -99,7 +99,7 @@ export default class HeadMarket extends Component {
           currency_name: currency.name,
 
      });
-     this.props.onChangeMarket(markets[0].value);
+     this.props.onChangeMarket(markets[0].value, currency.uuid);
 
   }
   componentDidMount() {

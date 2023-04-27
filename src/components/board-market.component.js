@@ -43,6 +43,7 @@ export default class BoardMarket extends Component {
 
     this.state = {
       market: undefined,
+      currency: undefined,
       subject: undefined,
       person: undefined,
       asset: undefined,
@@ -52,10 +53,12 @@ export default class BoardMarket extends Component {
     this.onChangePerson  = this.onChangePerson.bind(this);
     this.onChangeAsset   = this.onChangeAsset.bind(this);
   }                                                
-  onChangeMarket(uuid)
+  onChangeMarket(uuid, currency)
   {
+    console.log(currency);
     this.setState({
       market: uuid,
+      currency: currency,
     });
   }
   onChangeSubject(uuid)
@@ -117,6 +120,7 @@ export default class BoardMarket extends Component {
          >
              <SelectorMarketObject
                 market={this.state.market}
+                currency={this.state.currency}
                 subject={this.state.subject}
                 person={this.state.person}
                 asset={this.state.asset}

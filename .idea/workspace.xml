@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="805d2b9c-6d07-4c9b-b54f-87f6f0a633c5" name="Default" comment="Роутинг">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.github/workflows/deployProduct.yml" afterPath="$PROJECT_DIR$/.github/workflows/deployProduct.yml" />
+    <list default="true" id="805d2b9c-6d07-4c9b-b54f-87f6f0a633c5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
     </list>
     <ignored path="manager_purple.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -231,7 +229,7 @@
       <workItem from="1679954289185" duration="6493000" />
       <workItem from="1680157346204" duration="2521000" />
       <workItem from="1680671658329" duration="5658000" />
-      <workItem from="1682009568422" duration="1913000" />
+      <workItem from="1682009568422" duration="2468000" />
     </task>
     <task id="LOCAL-00001" summary="Сборка проекта React через Action">
       <created>1679983915801</created>
@@ -394,11 +392,18 @@
       <option name="project" value="LOCAL" />
       <updated>1682017264888</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Роутинг">
+      <created>1682025674550</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1682025674550</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16585000" />
+    <option name="totallyTimeSpent" value="17140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />

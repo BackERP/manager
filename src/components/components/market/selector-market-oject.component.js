@@ -22,6 +22,7 @@ export default class SelectorMarketObject extends Component {
 
     this.state = {
         market: this.props.market,
+        currency: this.props.currency,
         subject: this.props.subject,
         person: this.props.person,
         asset: this.props.asset,
@@ -34,6 +35,7 @@ export default class SelectorMarketObject extends Component {
     {
       this.setState({
         market: undefined,
+        currency: undefined,
         subject: undefined,
         person: undefined,
         asset: undefined,
@@ -43,6 +45,7 @@ export default class SelectorMarketObject extends Component {
 
     this.setState({
         market: nextProps.market,
+        currency: nextProps.currency,
         subject: nextProps.subject,
         person: nextProps.person,
         asset: nextProps.asset,
@@ -51,7 +54,7 @@ export default class SelectorMarketObject extends Component {
 
 
   render() {
-    const {market, subject, person, asset} = this.state;
+    const {market, currency, subject, person, asset} = this.state;
     return (
       <>
 {
@@ -73,7 +76,7 @@ export default class SelectorMarketObject extends Component {
 
 {
         (subject != undefined && person != undefined && asset != undefined) && (
-           <AssetMarketObjectForm market={market} subject={subject} person={person} asset={asset}/>
+           <AssetMarketObjectForm market={market} subject={subject} person={person} asset={asset} currency={currency}/>
         )
 }
 
